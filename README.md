@@ -8,7 +8,7 @@
 ## 基本信息
 - 学号: 222016321072010
 -姓名：杜芝豪
-- 网址: https://github.com/duzhihao147/javaweb
+- 网址: http://47.101.176.62:8080/javaweb/login.html
 
 
 ## 第一周完成内容
