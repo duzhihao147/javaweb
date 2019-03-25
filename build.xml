@@ -2,6 +2,7 @@
 <project name="javaweb" default="1_build">
 	<target name="init">
 		<property name="project.name" value="javaweb" />
+		<property name="jar.name" value="swu-javaweb-LoginServlet" />
 		<property name="jar.name" value="swu-javaweb-demo" />
 		<property name="src.dir" value="./src" />
 		<property name="web.dir" value="./web" />
