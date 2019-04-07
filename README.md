@@ -17,7 +17,7 @@
 
 - 学号: **222016321072009**
 - 网址:http://47.101.176.62:8080/javaweb/Login.html
-- 网址:http://47.101.176.62:8080/javaweb/dzh.jsp
+- 网址:http://47.101.176.62:8080/javaweb/include/dzh.jsp
 
 
 ## 第一周完成内容
