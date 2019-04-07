@@ -1,17 +1,26 @@
-<page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>User Login Page</title>
 </head>
-<body background="../../icon/timg.jpeg">
-        <h2>dzh  Page</h2>
+<body>
+<center>
+<hr><br>Welcome to this <font color="green">Login Page</font>!<br>
+<form action="do_login.jsp" method="get">
+<br>
+<h1>Please input your message:</h1><br>
+用户名:<input type="text" name="name"><br>
+密码:  <input type="password" name="password"><br>
+<br><br><br>
+<input type="submit" value="登陆">    <input type="reset"><br>
 
-        <% String str = "abcde"; %>
+</form>
+</center>
 
-        <%@ include file="b.jsp"%>
 </body>
 </html>
+
 
