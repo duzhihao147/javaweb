@@ -40,6 +40,16 @@
                 <servlet-name>loginServlet3</servlet-name>
                 <url-pattern>/loginServlet3</url-pattern>
         </servlet-mapping>	
+	 <servlet>
+                <servlet-name>registServlet</servlet-name>
+                <servlet-class>cn.swu.edu.registServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>registServlet</servlet-name>
+                <url-pattern>/registServlet</url-pattern>
+        </servlet-mapping>
+
 
 
 </web-app>
