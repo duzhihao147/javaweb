@@ -38,7 +38,7 @@ public class registServlet extends HttpServlet {
 			statement = connection.prepareStatement(sql);
 			statement.setString(1,username);
 			statement.setString(2,password);
-			statement.executeQuery();
+			statement.executeUpdate();
 			
 			
 		} catch (Exception e) {
@@ -64,6 +64,7 @@ public class registServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 		
-		}	
+		}
+		out.print("hello");	
 	}
 }
