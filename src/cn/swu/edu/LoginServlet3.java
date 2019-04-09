@@ -43,9 +43,9 @@ public class LoginServlet3 extends HttpServlet {
 			if(resultSet.next()) {
 				int count = resultSet.getInt(1);
 				if(count > 0) {
-					out.print("hello" + username);
+					response.sendRedirect("./Modest/index.html");	
 				}else {
-					out.print("sorry" + username);
+					request.getRequestDispatcher("./Login.html").forward(request,response);
 				}
 			}
 		} catch (Exception e) {
