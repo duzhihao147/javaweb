@@ -36,7 +36,10 @@
 ## 第七周完成内容
 -完成登录成功之后跳转到另外一个界面。另外一个界面是自己的一个博客；
 -登陆失败之后重新返回到登陆界面，并且页面报错。
-
+## 第八周完成内容
+-在web下面新建了一个include文件，里面写了login.jsp和register.jsp以及新建了一个database为db_01,写了一个连接数据库的jsp。
+-链接：http://47.101.176.62:8080/javaweb/include/register.jsp
+-http://47.101.176.62:8080/javaweb/include/login.jsp
 
 
 
