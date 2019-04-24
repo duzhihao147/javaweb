@@ -33,7 +33,7 @@ public class LoginServlet3 extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql:///test";
 			String user = "root";
-			String password2 = "Du865521";
+			String password2 = "";
 			connection = DriverManager.getConnection(url,user,password2);
 			statement = connection.prepareStatement(sql);
 			statement.setString(1,username);
@@ -43,7 +43,7 @@ public class LoginServlet3 extends HttpServlet {
 			if(resultSet.next()) {
 				int count = resultSet.getInt(1);
 				if(count > 0) {
-					response.sendRedirect("./Modest/index.html");	
+					response.sendRedirect("./index.jsp");	
 				}else {
 					request.getRequestDispatcher("./Login.html").forward(request,response);
 				}
