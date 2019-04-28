@@ -9,6 +9,16 @@
 <title>Insert title here</title>
 </head>
 <body><center>
+	<% Cookie[] cc = request.getCookies();
+	   boolean has = false;
+	    for(Cookie c:cc){
+        	if(c.getName().equals("username")){
+        	has=true;
+    	}
+  	}	  	
+	if(has==false){
+    	response.sendRedirect("Login.jsp");}
+%>
         <form action="query.do" method="post">
                 <table>
                     <tr>

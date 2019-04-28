@@ -14,7 +14,7 @@ import cn.swu.edu.CustomerDaoJdbcImpl;
 import cn.swu.edu.Customer;
 import cn.swu.edu.CriteriaCustomer;
 import cn.swu.edu.CustomerDao;
-
+//import javax.servlet.http.HttpSession;
 
 public class CustomerServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;

@@ -12,8 +12,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.Cookie;
 public class LoginServlet3 extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -22,13 +22,11 @@ public class LoginServlet3 extends HttpServlet {
 		// TODO Auto-generated method stub
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-
 		String sql = "select count(id) from test_users where name = ?" + "and password = ?";
 		PrintWriter out = response.getWriter();
 		Connection connection = null;
 		PreparedStatement statement = null;
 		ResultSet resultSet = null;
-
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql:///test";
@@ -43,7 +41,10 @@ public class LoginServlet3 extends HttpServlet {
 			if(resultSet.next()) {
 				int count = resultSet.getInt(1);
 				if(count > 0) {
-					response.sendRedirect("./index.jsp");	
+					 Cookie c = new Cookie("username", username);
+			                response.addCookie(c);
+                			response.sendRedirect("index.jsp");
+	
 				}else {
 					request.getRequestDispatcher("./Login.html").forward(request,response);
 				}

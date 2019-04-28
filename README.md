@@ -40,7 +40,8 @@
 - 链接：http://47.101.176.62:8080/javaweb/include/register.jsp
 - http://47.101.176.62:8080/javaweb/include/login.jsp
 ## 第九周完成内容
-- 完成基本的mvc部署，模糊的增删改查
+- 完成基本的mvc部署，模糊的增删改查。
+- 学习了cookie和session的相关视频内容，并且实现了cookie和session。
 
 
 
