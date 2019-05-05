@@ -43,7 +43,7 @@ public class LoginServlet3 extends HttpServlet {
 				if(count > 0) {
 					 Cookie c = new Cookie("username", username);
 			                response.addCookie(c);
-                			response.sendRedirect("index.jsp");
+                			response.sendRedirect("/JavaWebProject/index.jsp");
 	
 				}else {
 					request.getRequestDispatcher("./Login.html").forward(request,response);

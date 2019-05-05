@@ -42,7 +42,8 @@
 ## 第九周完成内容
 - 完成基本的mvc部署，模糊的增删改查。
 - 学习了cookie和session的相关视频内容，并且实现了cookie和session。(cookie未实现注销功能，需要清除cookie后访问index.jsp,或者换一个浏览器)
-
+## 第十周完成内容
+- 新建了一个项目JavaWebProject，完成了一个“毕业生去向登记管理系统”的前端页面。
 
 
 
