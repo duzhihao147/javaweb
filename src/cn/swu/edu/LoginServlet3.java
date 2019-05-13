@@ -43,10 +43,10 @@ public class LoginServlet3 extends HttpServlet {
 				if(count > 0) {
 					 Cookie c = new Cookie("username", username);
 			                response.addCookie(c);
-                			response.sendRedirect("/JavaWebProject/index.jsp");
+                			response.sendRedirect("");
 	
 				}else {
-					request.getRequestDispatcher("./Login.html").forward(request,response);
+					request.getRequestDispatcher("./Login.jsp").forward(request,response);
 				}
 			}
 		} catch (Exception e) {
